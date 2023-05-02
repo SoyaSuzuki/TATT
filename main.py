@@ -1,6 +1,6 @@
 import yaml
 import sys
-import argparse
+import argparse #実行時に因数を指定するために必要
 import os
 from IPython import embed
 from easydict import EasyDict
@@ -19,7 +19,9 @@ def main(config, args, opt_TPG):
 
 
 if __name__ == '__main__':
+    # ArgumentParserのオブジェクトを作成
     parser = argparse.ArgumentParser(description='')
+    # add_argumentで因数の定義を追加
     parser.add_argument('--arch', default='tsrn_tl_wmask', choices=['tsrn_tl_cascade_sft', 'tsrn', 'bicubic', 'srcnn', 'vdsr', 'srres', 'esrgan', 'scgan', 'rdn', 'tbsrn',
                                                            'edsr', 'lapsrn', 'tsrn_tl_wmask', 'tsrn_tl_cascade', 'srcnn_tl', 'srresnet_tl', 'rdn_tl', 'vdsr_tl', 'tranSR_v4',
                                                                     "esrgan_tl", "scgan_tl", 'tbsrn_tl', 'tatt', "han", 'pcan', 'pcan_tl'])
