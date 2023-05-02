@@ -10,10 +10,10 @@ TRAIN:
     # '/data1_ssd4t/majianqi/CVPR2016',
     # "/data0_ssd2t/majianqi/video_seq"
   ]
-  batch_size: 512
+  batch_size: 32
   width: 128
   height: 32
-  epochs: 500
+  epochs: 10
   cuda: True
   ngpu: 1
   workers: 8

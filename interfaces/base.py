@@ -727,7 +727,7 @@ class TextBase(object):
         model_path = recognizer_path if not recognizer_path is None else self.config.TRAIN.VAL.crnn_pretrained
         print('loading pretrained crnn model from %s' % model_path)
         stat_dict = torch.load(model_path)
-        print("stat_dict:", stat_dict.keys())
+        # print("stat_dict:", stat_dict.keys())
         if recognizer_path is None:
             model.load_state_dict(stat_dict)
         else:
