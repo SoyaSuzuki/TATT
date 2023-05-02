@@ -5,6 +5,7 @@
 *.npy
 *.npz
 *.pth
+*.tar
 *.pt
 *.ckpt
 *.tfrecord
