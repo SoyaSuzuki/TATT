@@ -10,7 +10,7 @@ TRAIN:
     # '/data1_ssd4t/majianqi/CVPR2016',
     # "/data0_ssd2t/majianqi/video_seq"
   ]
-  batch_size: 32
+  batch_size: 1
   width: 128
   height: 32
   epochs: 10
