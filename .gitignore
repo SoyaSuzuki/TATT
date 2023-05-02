@@ -1,0 +1,13 @@
+# 画像ファイル
+*.jpg
+*.png
+# データ系
+*.npy
+*.npz
+*.pth
+*.pt
+*.ckpt
+*.tfrecord
+.env
+# バイナリデータ
+__pycache__/
