@@ -8,7 +8,6 @@ from tqdm import tqdm
 import math
 import pickle
 import copy
-from utils import util, ssim_psnr
 from IPython import embed
 from torchvision import transforms
 from torch.autograd import Variable
@@ -21,6 +20,7 @@ import cv2
 sys.path.append('../')
 sys.path.append('./')
 from interfaces import base
+from utils import util, ssim_psnr
 from utils.meters import AverageMeter
 from utils.metrics import get_string_aster, get_string_crnn, Accuracy
 from utils.util import str_filt
